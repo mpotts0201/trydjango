@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block about_content %}
+<h1>About</h1>
+
+<p>This is an about page</p>
+
+<p>{{ my_text }}, {{ my_number }}</p>
+
+<ul>
+    {% for each in my_list %}
+        <li>{{each}}</li>
+    {% endfor %}
+</ul>
+
+
+{% endblock %}
